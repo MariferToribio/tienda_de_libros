@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#bla"  />
+    <link rel="icon" type="image/png" href="./imagenes/icono_libro.png" />
+    <title>Tienda de libros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+
+<header class="container-fluid bg-light position-sticky top-0">
+    <ul class="nav nav-tabs py-1 container" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link disabled" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">BOOKSTORE</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link text-success active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Libros</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link text-success" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Carrito</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link text-success" id="search-tab" data-bs-toggle="tab" data-bs-target="#search" type="button" role="tab" aria-controls="search" aria-selected="false">Buscar</button>
+        </li>
+    </ul>
+</header>
+
+<div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+    Producto Añadido al carrito!
+</div>
+<div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+    Producto removido!
+</div>
+
+<h1></h1>
+
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active container" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <h2 class="h4 m-4 text-dark">LIBROS</h2>
+
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+            <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-light rounded" style="width: 20rem;">
+                    <div id="card1">
+                        <h5 class="card-title pt-2 text-center text-success" id="libro1">Guia de Habitos Inteligentes</h5>
+                        <img src="./imagenes/libro1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6>Exito profesional</h6>
+                            <p class="card-text text-dark-50 description">La Guía de Hábitos Inteligentes es un Éxito de Ventas Internacional con más de 2,000 Opiniones Cinco-Estrellas en Amazon, Google Play, y Goodreads, incluyendo traducciones en cuatro idiomas.</p>
+                            <h5 class="text-success">Precio: <span class="precio">$ 239</span></h5>
+                            <div class="d-grid gap-2">
+                                <button  class="btn btn-success button" precio="239" titulo="Guia de Habitos Inteligentes">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-light rounded" style="width: 20rem;">
+                    <h5 class="card-title pt-2 text-center text-success">A Cinco Pies de Ti</h5>
+                    <img src="./imagenes/libro2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6>Ficcion</h6>
+                        <p class="card-text text-dark-50 description">BESTSELLER DEL NEW YORK TIMES. Necesitamos estar cerca de las personas que queremos casi tanto como el aire que respiramos.</p>
+                        <h5 class="text-success">Precio: <span class="precio">$ 344</span></h5>
+                        <div class="d-grid gap-2">
+                            <button  class="btn btn-success button" precio="344" titulo="A Cinco Pies de Ti">Añadir a Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-light rounded" style="width: 20rem;">
+                    <h5 class="card-title pt-2 text-center text-success">Bajo un cielo escarlata</h5>
+                    <img src="./imagenes/libro3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6>Ficcion</h6>
+                        <p class="card-text text-dark--50 description">El chico que se convirtió en espía por amor en uno de los momentos más oscuros de la historia. La novela basada en la verdadera y épica historia de un héroe olvidado de la Segunda Guerra Mundial.</p>
+                        <h5 class="text-success">Precio: <span class="precio">$ 109</span></h5>
+                        <div class="d-grid gap-2">
+                            <button  class="btn btn-success button" precio="109" titulo="Bajo un cielo escarlata">Añadir a Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-light rounded" style="width: 20rem;">
+                    <h5 class="card-title pt-2 text-center text-success">Escrito en el agua</h5>
+                    <img src="./imagenes/libro4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6>Misterio</h6>
+                        <p class="card-text text-dark--50 description">Una apasionante novela sobre las historias que nos contamos al recordar nuestro pasado y su poder para destruirnos.</p>
+                        <h5 class="text-success">Precio: <span class="precio">$ 358</span></h5>
+                        <div class="d-grid gap-2">
+                            <button  class="btn btn-success button" precio="358" titulo="Escrito en el agua">Añadir a Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-light rounded" style="width: 20rem;">
+                    <h5 class="card-title pt-2 text-center text-success">La chica del tren</h5>
+                    <img src="./imagenes/libro5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6>Misterio</h6>
+                        <p class="card-text text-dark-50 description">La chica del tren es una novela de intriga y misterio de la autora británica Paula Hawkins, publicada en 2015.</p>
+                        <h5 class="text-success">Precio: <span class="precio">$ 288</span></h5>
+                        <div class="d-grid gap-2">
+                            <button  class="btn btn-success button" precio="288" titulo="La chica del tren">Añadir a Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-light rounded" style="width: 20rem;">
+                    <h5 class="card-title pt-2 text-center text-success">No soy un monstruo</h5>
+                    <img src="./imagenes/libro6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6>Misterio</h6>
+                        <p class="card-text text-dark-50 description">No soy un monstruo es una novela de la periodista, presentadora y escritora Carme Chaparro publicado el 21 de marzo de 2017.</p>
+                        <h5 class="text-success">Precio: <span class="precio">$ 99</span></h5>
+                        <div class="d-grid gap-2">
+                            <button  class="btn btn-success button" precio="99" titulo="No soy un monstruo">Añadir a Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-light rounded" style="width: 20rem;">
+                    <h5 class="card-title pt-2 text-center text-success">Yo se por que canta el pajaro enjaulado</h5>
+                    <img src="./imagenes/libro7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6>Biografia</h6>
+                        <p class="card-text text-dark-50 description">En el primer volumen de su autobiografía, Maya Angelou nos habla de su dura infancia y de los trances por los que tuvo que pasar hasta convertirse en una mujer independiente.</p>
+                        <h5 class="text-success">Precio: <span class="precio">$ 450</span></h5>
+                        <div class="d-grid gap-2">
+                            <button  class="btn btn-success button" precio="450" titulo="Yo se por que canta el pajaro enjaulado">Añadir a Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-light rounded" style="width: 20rem;">
+                    <h5 class="card-title pt-2 text-center text-success">La ladrona de libros</h5>
+                    <img src="./imagenes/libro8.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 id="libro8">Ficcion</h6>
+                        <p class="card-text text-dark-50 description">La ladrona de libros es una novela de Markus Zusak publicada en 2005.</p>
+                        <h5 class="text-success">Precio: <span class="precio">$ 297</span></h5>
+                        <div class="d-grid gap-2">
+                            <button  class="btn btn-success button" precio="297" titulo="La ladrona de libros">Añadir a Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane fade carrito" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <br>
+        <table class="table table-light table-hover">
+            <thead>
+            <tr class="text-success">
+                <th scope="col">#</th>
+                <th scope="col">Libros</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
+            </tr>
+            </thead>
+            <tbody class="tbody">
+
+            </tbody>
+        </table>
+        <br><br>
+        <div class="row mx-4">
+            <div class="col">
+                <h3 class="itemCartTotal text-white" id="itemTotal">Total: 0</h3>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <a href="login.html" class="btn btn-success">COMPRAR</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane fade show container" id="search" role="tabpanel" aria-labelledby="search-tab">
+        <div class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+            <i class="fas fa-search" aria-hidden="true"></i>
+            <input class="form-control form-control-sm ml-3 w-75" type="text" id="buscar-text" placeholder="Buscar"
+                   aria-label="Search">
+            <div class="col-auto">
+                <button class="btn btn-lg btn-success button-search" type="submit">Buscar</button>
+            </div>
+        </div>
+        <h2 class="h4 m-4 text-dark"></h2>
+
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 card-complete">
+
+        </div>
+    </div>
+</div>
+
+<footer class="bg-light p-3 mt-5">
+    <p class="text-center m-0 text-muted">BOOKSTORE</p>
+</footer>
+
+<script src="minicart.js"></script>
+    <script>
+        paypal.minicart.render({
+            strings: {
+            button: 'Pagar:'
+            ,buttonAlt: 'Total'
+            ,subtotal: 'Total:'
+            ,empty: 'No hay productos en el carrito'
+        }
+        });
+
+        $('.button').click(function(e){
+            e.stopPropagation();
+            paypal.minicart.cart.add({
+                business: 'marifertoribio20@gmail.com',
+                item_name: $(this).attr("titulo"),
+                amount: $(this).attr("precio"),
+                currency_code: 'MXN',
+            });
+        });
+    </script>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="./js/scripts.js"></script>
+</body>
+</html>

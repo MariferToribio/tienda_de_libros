@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+    <section class="form-add">
+        <form action="/add" method="POST">
+            <h4>AGREGAR LIBRO</h4>
+            <input class="controls" type="text" name="titulo" id="titulo" placeholder="Titulo">
+            <input class="controls" type="text" name="editorial" id="editorial" placeholder="Editorial">
+            <input class="controls" type="text" name="autor" id="autor" placeholder="Autor">
+            <input class="controls" type="text" name="ISBN" id="ISBN" placeholder="ISBN">
+            PRECIO
+            <input class="controls" type="number" min="1" step="any"/>
+            DESCRIPCIÓN
+            <input type="descripcion" name="descripcion" size="50">
+            <input type="file"  name="image">
+            <input class="botons-add" type="submit" value="Agregar">
+            <!--<button type="submit">Upload</button>-->
+        </form>
+    </section>
+</body>
+</html>

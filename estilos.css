@@ -1,0 +1,118 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.titulo_cont{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 10px;
+    color: white;
+}
+
+.parrafo_cont{
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+}
+
+.contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 25px 10px;
+    border: solid;
+    background-color: rgba(134, 137, 142, 0.2);
+}
+
+
+.elem-nav{
+    background-color: rgba(5, 12, 16, 0.85);
+}
+
+.cabezeraSegundaP{
+    width: 100%;
+    height: 80px;
+    background-color: rgba(163, 137, 144, 0.9);
+}
+
+.form-register {
+    width: 400px;
+    background: rgba(82, 56, 117, 0.85);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 95%;
+    background: #FFFFFF;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #020202;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: black;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: rgba(154, 131, 184, 0.85);
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.form-register .botons:hover {
+    background-color: rgba(63, 38, 96, 0.85);
+    cursor: pointer;
+}
+
+.form-add {
+    width: 400px;
+    background: rgba(22, 35, 79, 0.8);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+}
+
+.form-add .botons-add {
+    width: 100%;
+    background: rgba(90, 102, 133, 0.8);
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.form-add .botons-add:hover {
+    background-color: rgba(23, 38, 86, 0.8);
+    cursor: pointer;
+}
+
+.form-add h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
